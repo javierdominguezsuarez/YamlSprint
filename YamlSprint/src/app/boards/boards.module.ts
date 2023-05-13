@@ -5,17 +5,21 @@ import { DragDropModule } from '@angular/cdk/drag-drop';
 import { UsFormComponent } from './us-form/us-form.component'
 import { ReactiveFormsModule } from '@angular/forms';
 import { MatDialogModule } from '@angular/material/dialog';
+import { UsCardComponent } from './us-card/us-card.component';
+import { CoreModule } from '../core/core.module';
 
 @NgModule({
   declarations: [
     ScrumBoardComponent,
-    UsFormComponent
+    UsFormComponent,
+    UsCardComponent
   ],
   imports: [
     CommonModule,
     DragDropModule,
     ReactiveFormsModule,
-    MatDialogModule
+    MatDialogModule,
+    CoreModule
   ]
 })
 export class BoardsModule { }

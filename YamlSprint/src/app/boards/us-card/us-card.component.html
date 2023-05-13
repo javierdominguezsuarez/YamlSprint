@@ -1,0 +1,21 @@
+<article>
+    <section class="top">
+        <p><strong>{{this.userStory.name || "UserStoryName"}}</strong></p>
+    </section>
+    <section class="mid">
+        <div class="id-container">
+            <p class="id-text">{{this.userStory.id|| "UserStoryID"}}</p>
+        </div>
+        
+    </section>
+    <section class="bot">
+        <div class="owner-container">
+            <div class="pic-container">
+                <img src="https://i2-prod.dailyrecord.co.uk/incoming/article1986413.ece/ALTERNATES/s1227b/Lemur.jpg" alt="Francisco">
+            </div>
+            <p class="owner-text">{{this.userStory.owner|| "UserStoryOwner"}}</p>
+        </div>
+        
+        <p class="sp-text">{{this.userStory.estimation + 'SP'|| "UserStoryEstimation"}}</p>
+    </section>
+</article>

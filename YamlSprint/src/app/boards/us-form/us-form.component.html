@@ -3,10 +3,6 @@
 
     <form [formGroup]="yamlForm">
         <textarea formControlName="yamlInput" placeholder="Insert or paste your user story in yaml format here"></textarea>
-        <button type="button" (click)="convert()">Convert</button>
     </form>
-
-    <div *ngIf="tsObject">
-        <pre>{{ tsObject | json }}</pre>
-    </div>
+    <app-button word="Add" (click)="convert()"></app-button>
 </main>
