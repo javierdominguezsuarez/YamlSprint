@@ -1,0 +1,12 @@
+<main>
+    <h2>Add your user story</h2>
+
+    <form [formGroup]="yamlForm">
+        <textarea formControlName="yamlInput" placeholder="Insert or paste your user story in yaml format here"></textarea>
+        <button type="button" (click)="convert()">Convert</button>
+    </form>
+
+    <div *ngIf="tsObject">
+        <pre>{{ tsObject | json }}</pre>
+    </div>
+</main>
