@@ -1,1 +1,18 @@
 /* You can add global styles to this file, and also import other style files */
+*{
+    font-family: sans-serif;
+    color: #3c3c3c;
+}
+body{
+    height: 100vh;
+    margin: 0;
+    background-color: #f4f4f4;
+    overflow-y: scroll;
+    
+}
+
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+@import "~bootstrap-icons/font/bootstrap-icons.css";

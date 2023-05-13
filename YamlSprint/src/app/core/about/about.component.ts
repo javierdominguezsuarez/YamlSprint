@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-about',
@@ -7,11 +8,11 @@ import { Component } from '@angular/core';
 })
 export class AboutComponent {
 
-  constructor(){ }
+  constructor(private router: Router){ }
   login(){
-    // To do 
+    this.router.navigate(['/login'])
   }
   register(){
-    // To do
+    this.router.navigate(['/register'])
   }
 }

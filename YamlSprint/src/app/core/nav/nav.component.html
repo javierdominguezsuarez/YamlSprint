@@ -1,9 +1,9 @@
 <header>
-    <section class="icon"><img src="../../../assets/images/YamlSprint.svg" alt="logo"></section>
+    <section class="icon"><img src="../../../assets/images/YamlSprint.svg" alt="logo" [routerLink]="['/']"></section>
     <nav class="menu">
-        <a>Features</a>
-        <a>About us</a>
-        <a>Pricing</a>
+        <a [routerLink]="['/features']">Features</a>
+        <a [routerLink]="['/about']">About us</a>
+        <a [routerLink]="['/pricing']">Pricing</a>
     </nav>
-    <section class="action"> <app-button word="Start now"></app-button></section>
+    <section class="action"> <app-button word="Start now" [routerLink]="['/register']"   ></app-button></section>
 </header>

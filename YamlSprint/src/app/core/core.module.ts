@@ -4,6 +4,8 @@ import { NavComponent } from './nav/nav.component';
 import { ButtonComponent } from './button/button.component';
 import { AboutComponent } from './about/about.component';
 import { ButtonOppositeComponent } from './button-opposite/button-opposite.component';
+import { RouterModule } from '@angular/router';
+import { NavHorizontalComponent } from './nav-horizontal/nav-horizontal.component';
 
 
 
@@ -12,13 +14,19 @@ import { ButtonOppositeComponent } from './button-opposite/button-opposite.compo
     NavComponent,
     ButtonComponent,
     AboutComponent,
-    ButtonOppositeComponent
+    ButtonOppositeComponent,
+    NavHorizontalComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    RouterModule
   ],
   exports: [
-    NavComponent
+    NavComponent,
+    ButtonComponent,
+    AboutComponent,
+    ButtonOppositeComponent,
+    NavHorizontalComponent
   ]
 })
 export class CoreModule { }

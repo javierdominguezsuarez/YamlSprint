@@ -3,19 +3,28 @@ import { CommonModule } from '@angular/common';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 
+import { CoreModule } from '../core/core.module';
+import { RouterModule } from '@angular/router';
+
 
 
 @NgModule({
-  declarations: [
-    LoginComponent,
-    RegisterComponent
-  ],
-  imports: [
-    CommonModule
-  ],
-  exports:[
-    LoginComponent,
-    RegisterComponent
-  ]
+    declarations: [
+        LoginComponent,
+        RegisterComponent,
+
+    ],
+    exports: [
+        LoginComponent,
+        RegisterComponent,
+        RouterModule
+
+    ],
+    imports: [
+        CommonModule,
+        CoreModule,
+        RouterModule
+
+    ]
 })
 export class AuthModule { }

@@ -1,0 +1,51 @@
+<section class="container" *ngIf="expanded">
+    <section class="header">
+        <i class="bi bi-chevron-left" (click)="close()"></i>
+    </section>
+    <section class="nav">
+        <div class="nav-block">
+            <i class="bi bi-people-fill"></i>
+            <p class="nav-item">Team Projects</p>
+        </div>
+        <div class="nav-block">
+            <i class="bi bi-kanban-fill"></i>
+            <p class="nav-item">Scrum Boards</p>
+        </div>
+        <div class="nav-block">
+            <i class="bi bi-building-fill"></i>
+            <p class="nav-item">Organizational</p>
+        </div>
+        <div class="nav-block">
+            <i class="bi bi-gear-wide-connected"></i>
+            <p class="nav-item">Configurations</p>
+        </div>
+        
+    </section>
+    <section class="footer">
+        <p class="nav-item">Salir</p>
+    </section>
+</section>
+
+<section class="container container-closed" *ngIf="!expanded">
+    <section class="header-closed">
+        <i class="bi bi-chevron-right" (click)="open()"></i>
+    </section>
+    <section class="nav">
+        <div class="nav-block">
+            <i class="bi bi-people-fill"></i>
+        </div>
+        <div class="nav-block">
+            <i class="bi bi-kanban-fill"></i>
+        </div>
+        <div class="nav-block">
+            <i class="bi bi-building-fill"></i>
+        </div>
+        <div class="nav-block">
+            <i class="bi bi-gear-wide-connected"></i>
+        </div>
+        
+    </section>
+    <section class="footer">
+        <p class="nav-item">Salir</p>
+    </section>
+</section>

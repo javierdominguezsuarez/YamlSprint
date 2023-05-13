@@ -1,0 +1,20 @@
+main{
+    margin-top: 2.2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2.2rem;
+    background-color: #fff;
+    border-radius: 0.3rem;
+}
+h1{
+    text-align: center;
+    color: #FF4769;
+}
+.price{
+    color: #FF4769;
+    font-weight: 800;
+}

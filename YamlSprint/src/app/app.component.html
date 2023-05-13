@@ -1,4 +1,26 @@
-<main class="container"> 
+<main class="container" *ngIf="url != '/demo'">
   <app-nav></app-nav>
-  <router-outlet></router-outlet> 
+  <router-outlet></router-outlet>
+</main>
+
+
+<main class="demo-container" *ngIf="url === '/demo' && navExpanded">
+  <section>
+    <app-nav-horizontal [refresh]=true  (action) ="actionNavHoz($event)"></app-nav-horizontal>
+  </section>
+  <section>
+    <router-outlet></router-outlet>
+  </section>
+  
+
+</main>
+<main class="demo-container non-expanded" *ngIf="url === '/demo' && !navExpanded">
+  <section>
+    <app-nav-horizontal [refresh]=false (action) ="actionNavHoz($event)"></app-nav-horizontal>
+  </section>
+  <section>
+    <router-outlet></router-outlet>
+  </section>
+  
+
 </main>

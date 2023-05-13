@@ -1,6 +1,18 @@
+.container {
+    width: 100%;
+    min-height: 100%;
+    padding-bottom: 2.2rem;
+}
 
-.container{
+.demo-container {
     width: 100%;
     height: 100%;
-    
+    display: grid;
+    grid-template-columns: 0.8fr 4fr;
+}
+.non-expanded{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 0.05fr 4.75fr;
 }

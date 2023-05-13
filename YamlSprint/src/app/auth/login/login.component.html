@@ -1,1 +1,27 @@
-<p>login works!</p>
+<main>
+    <section class="left">
+        <section class="top">
+            <h2> Welcome back to work!</h2>
+        </section>
+        
+        <section class="mid">
+            <div class="input-block">
+                <label>Email</label>
+                <input type="text" required>
+            </div>
+            <div class="input-block">
+                <label>Password</label>
+                <input type="password" required>
+            </div>
+        </section>
+            
+        <section class="bot">
+            <app-button word="Log in" [routerLink]="['/demo']"></app-button>
+            <app-button-opposite word="Register" [routerLink]="['/register']" ></app-button-opposite>
+            <p class="forget" >Did you forget the password?</p>
+        </section>
+        
+    </section>
+    <section class="right"></section>
+</main>
+

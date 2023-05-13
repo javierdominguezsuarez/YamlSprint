@@ -1,1 +1,25 @@
-<p>register works!</p>
+<main>
+    <section class="left">
+        <section class="top">
+            <h2> Welcome to the Programmer's favourite Scrum platform </h2>
+        </section>
+        
+        <section class="mid">
+            <div class="input-block">
+                <label>Email</label>
+                <input type="text" required>
+            </div>
+            <div class="input-block">
+                <label>Password</label>
+                <input type="password" required>
+            </div>
+        </section>
+            
+        <section class="bot">
+            <app-button word="Register"></app-button>
+            <app-button-opposite word="Login" [routerLink]="['/login']" ></app-button-opposite>
+        </section>
+        
+    </section>
+    <section class="right"></section>
+</main>
