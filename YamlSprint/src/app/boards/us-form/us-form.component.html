@@ -1,8 +1,53 @@
 <main>
-    <h2>Add your user story</h2>
+    <section class="top">
+        <h2>Add your user story</h2>
+        <div class="circle-btn" (click)="switch()">
+            <i class="bi bi-arrow-left-right"></i>
+        </div>
+    </section>
+    <form [formGroup]="yamlForm" *ngIf="this.form === false">
+        <textarea class="yaml-text" formControlName="yamlInput"
+            placeholder="Insert or paste your user story in yaml format here"></textarea>
+    </form>
+    <form class="form-trad" *ngIf="form === true" (submit)="convert()" [formGroup]="yamlFormTrad">
+        <div class="form-block">
+            <label for="name">Name:</label>
+            <input placeholder="Insert the name here" type="text" id="name" name="name" formControlName="name" required>
+        </div>
+        <div class="form-block">
+            <label for="id">Id</label>
+            <input placeholder="Insert the id" type="text" id="id" name="id" formControlName="id" required>
+        </div>
+        <div class="form-block-text">
+            <label for="description">Description:</label>
+            <textarea class="text" formControlName="yamlInput" placeholder="Insert your description here"
+                id="description" name="description" formControlName="description" required></textarea>
 
-    <form [formGroup]="yamlForm">
-        <textarea formControlName="yamlInput" placeholder="Insert or paste your user story in yaml format here"></textarea>
+        </div>
+        <div class="form-block-text">
+            <label for="subtasks">Subtasks</label>
+            <textarea class="text" formControlName="yamlInput" placeholder="Insert your subtaks here" id="subtasks"
+                name="subtasks" formControlName="subtasks" required></textarea>
+        </div>
+        <div class="form-block-text">
+            <label for="acceptanceCriteria">Acceptance Criteria</label>
+            <textarea class="text" formControlName="yamlInput" placeholder="Insert your acceptance criteria here"
+                id="acceptanceCriteria" name="acceptanceCriteria" formControlName="acceptanceCriteria"
+                required></textarea>
+        </div>
+        <div class="form-hoz-block">
+            <div class="form-block-tiny">
+                <label for="owner">Owner:</label>
+                <input placeholder="Insert the owner here" type="text" id="owner" name="owner" formControlName="owner"
+                    required>
+            </div>
+            <div class="form-block-tiny">
+                <label for="estimation">Estimation:</label>
+                <input placeholder="Insert the stimation here" type="text" id="estimation" name="estimation"
+                    formControlName="estimation" required>
+            </div>
+        </div>
+
     </form>
     <app-button word="Add" (click)="convert()"></app-button>
 </main>

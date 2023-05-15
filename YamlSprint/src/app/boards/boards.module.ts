@@ -7,12 +7,14 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { MatDialogModule } from '@angular/material/dialog';
 import { UsCardComponent } from './us-card/us-card.component';
 import { CoreModule } from '../core/core.module';
+import { UsViewComponent } from './us-view/us-view.component';
 
 @NgModule({
   declarations: [
     ScrumBoardComponent,
     UsFormComponent,
-    UsCardComponent
+    UsCardComponent,
+    UsViewComponent
   ],
   imports: [
     CommonModule,

@@ -1,0 +1,38 @@
+<main *ngIf="us">
+    <section class="top">
+        <section class="top-left">
+            <h2>{{ us.name }}</h2>
+            <div class="id-container">
+                <p class="id-text">{{us.id}}</p>
+            </div>
+        </section>
+        
+        <i class="bi bi-x-lg" (click)="closeDialog()"></i>
+    </section>
+    <div class="block">
+        <strong>Description</strong>
+        <p>{{ us.description }}</p>
+    </div>
+    <div class="block-big">
+        <strong>Subtasks</strong>
+        <p class="list-text" *ngFor="let subtask of us.subtasks">-{{ subtask }}</p>
+    </div>
+
+    <div class="block-big">
+        <strong>Acceptance Criteria</strong>
+        <p class="list-text" *ngFor="let ac of us.acceptanceCriteria">-{{ ac }}</p>
+    </div>
+    <section class="bot">
+        <div class="owner-container">
+            <div class="pic-container">
+                <img src="https://i2-prod.dailyrecord.co.uk/incoming/article1986413.ece/ALTERNATES/s1227b/Lemur.jpg"
+                    alt="Francisco">
+            </div>
+            <p>{{ us.owner }}</p>
+        </div>
+        <p>{{ us.estimation}} Story Points</p>
+    </section>
+</main>
+<main *ngIf="!us">
+    There was a problem with the user story
+</main>
