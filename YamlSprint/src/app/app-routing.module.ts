@@ -7,6 +7,7 @@ import { PricingComponent } from './landing/pricing/pricing.component';
 import { FeaturesComponent } from './landing/features/features.component';
 import { AboutUsComponent } from './landing/about-us/about-us.component';
 import { ScrumBoardComponent } from './boards/scrum-board/scrum-board.component';
+import { UsFormComponent } from './boards/us-form/us-form.component';
 
 const routes: Routes = [
   { path: '', component : AboutComponent },
@@ -15,7 +16,7 @@ const routes: Routes = [
   { path: 'pricing', component: PricingComponent },
   { path: 'features', component: FeaturesComponent },
   { path: 'about', component: AboutUsComponent },
-  { path: 'demo', component: ScrumBoardComponent },
+  { path: 'demo', component: ScrumBoardComponent }
   
 
 ];

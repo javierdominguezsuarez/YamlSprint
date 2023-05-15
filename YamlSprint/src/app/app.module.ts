@@ -6,6 +6,7 @@ import { CoreModule } from './core/core.module';
 import { AuthModule } from './auth/auth.module';
 import { BoardsModule } from './boards/boards.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     CoreModule,
     AuthModule,
     BoardsModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    FormsModule
   
   ],
   exports:[

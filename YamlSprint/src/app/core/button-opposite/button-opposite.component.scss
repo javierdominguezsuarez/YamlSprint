@@ -11,3 +11,9 @@ button{
     justify-content: center;
     align-items: center;
 }
+button:focus{
+    outline: none;
+  }
+button:active{
+    outline: none;
+  }
