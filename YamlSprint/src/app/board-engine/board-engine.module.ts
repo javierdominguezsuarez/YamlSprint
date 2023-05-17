@@ -5,10 +5,12 @@ import { CoreModule } from '../core/core.module';
 
 
 @NgModule({
-  declarations: [],
+  declarations: [
+
+  ],
   imports: [
     CommonModule,
     CoreModule
   ]
 })
-export class ExportModule { }
+export class BoardEngineModule { }
