@@ -8,6 +8,7 @@ import { MatDialogModule } from '@angular/material/dialog';
 import { UsCardComponent } from './us-card/us-card.component';
 import { CoreModule } from '../core/core.module';
 import { UsViewComponent } from './us-view/us-view.component';
+import htmlToPdfmake from 'html-to-pdfmake';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { UsViewComponent } from './us-view/us-view.component';
     DragDropModule,
     ReactiveFormsModule,
     MatDialogModule,
-    CoreModule
+    CoreModule,
+
   ]
 })
 export class BoardsModule { }
